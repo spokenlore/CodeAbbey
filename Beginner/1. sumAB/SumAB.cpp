@@ -1,5 +1,3 @@
-// Samson Fung 2014.08.12
-
 #include <iostream>
 #include <stdlib.h>
 
