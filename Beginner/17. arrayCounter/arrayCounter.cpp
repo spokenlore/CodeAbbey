@@ -23,6 +23,10 @@ int arrayCounter(){
 
 	int arr[checkValue];
 
+	for (int count = 1; count < checkValue + 1; count++){
+		arr[count] = 0;
+	}
+
 	for (int i = 0; i < numValues; i++){
 		file >> currentValue;
 		arr[currentValue] += 1;
