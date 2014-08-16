@@ -25,7 +25,7 @@ int bubbleSort(){
 
 	int arr[numTests];
 
-	int tempvar = 0, numPasses = 0, numSwaps = 0;
+	int tempvar = 0, numPasses = 1, numSwaps = 0;
 
 	for (int i = 0; i < numTests; i++){
 		file >> tempvar;
@@ -33,6 +33,7 @@ int bubbleSort(){
 	}
 
 	while (true){
+		tempvar = arr[0];
 	for(int i = 0; i < numTests-1; i++){
 		if (!(arr[i] <= arr[i+1])){
 			tempvar = arr[i];
@@ -43,6 +44,7 @@ int bubbleSort(){
 	}
 
 	if (arrCheck(arr, numTests) == true){
+			numPasses++;
 			newfile << numPasses << " " << numSwaps;
 			cout << endl;
 			return 0;
